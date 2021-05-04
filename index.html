@@ -13,8 +13,7 @@
 </head>
 
 <body>
-    <div class="backdrop " data-modal>
-        <!-- is-hidden -->
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" data-modal-close>
                 <svg class="form-close-svg">
@@ -400,6 +399,18 @@
                     </a></li>
                 </ul>
             </div>
+            <form class="footer-form">
+                    <label class="form-label">
+                        <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                        <input type="mail" name="e-mail" placeholder="E-mail">
+                    </label>
+                    <button class="distribution-submit" type="submit">
+                        Подписаться
+                        <svg class="footer-btn-svg">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
