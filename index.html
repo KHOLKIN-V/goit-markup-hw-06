@@ -13,14 +13,67 @@
 </head>
 
 <body>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
+        <!-- is-hidden -->
         <div class="modal">
-            <button class="modal-close" data-modal-close>X</button>
-            <p>
-        
-            </p>
+            <button class="modal-close" data-modal-close>
+                <svg class="form-close-svg">
+                    <use href="./images/icons.svg#form-close"></use>
+                </svg> 
+            </button>
+            <form class="modal-form">
+                <h4>Оставьте свои данные, мы вам перезвоним</h4>
+                <label class="form-label">
+                    <p>Имя</p>
+                    <span class="form-input-wrap">
+                        <input type="text" name="username" placeholder=" ">
+                        <svg class="form-input-svg">
+                            <use href="./images/icons.svg#form-person"></use>
+                        </svg>                         
+                    </span>
+                </label>
+                <label class="form-label">
+                    <p>Телефон</p>
+                    <span class="form-input-wrap">
+                        <input type="tel" name="phone" placeholder=" ">
+                        <svg class="form-input-svg">
+                            <use href="./images/icons.svg#form-phone"></use>
+                        </svg> 
+                    </span>
+                </label>
+                <label class="form-label">
+                    <p>Почта</p>
+                    <span class="form-input-wrap">
+                        <input type="email" name="email" placeholder=" ">
+                        <svg class="form-input-svg">
+                            <use href="./images/icons.svg#form-mail"></use>
+                        </svg>                                                     
+                    </span>
+
+                </label>
+                <label class="form-label">
+                  <p>Комментарий</p>
+                  <textarea name="feedback" placeholder="Введите текст"></textarea>
+                </label>
+                
+                <div class="checkbox-wrapper">
+                    <input 
+                        type="checkbox" 
+                        name="agreement" 
+                        value="agreement" 
+                        id="checkbox-agreement"
+                        class="modal-checkbox visually-hidden"
+                    />
+                    <label class="label-agreement" for="checkbox-agreement">
+                        Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                    </label>
+                </div>
+
+                <button class="modal-submit" type="submit">Отправить</button>
+            </form>
         </div>        
     </div>
+
     <header class="header">
         <div class="container">
             <nav class="navig">
